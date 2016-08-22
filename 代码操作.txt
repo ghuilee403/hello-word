@@ -1,0 +1,179 @@
+zhangrz@10.11.145.183:22's password: 
+Last login: Mon Jul 18 21:38:45 2016 from 123.59.122.11
+###############     Letv OS ¹æ·¶&Ö¸ÄÏ    ###############
+##                                                    ##
+##   http://wiki.letv.cn/display/IDC/OS+Instruction   ##
+##             Contact : ops_idc@letv.com             ##
+##                                                    ##
+########################################################
+-------------------------------------------------------
+LetvOS WebServer 1.6.0 (Final)
+Kernel 2.6.32-926.504.30.3.letv.el6.x86_64
+Last boot at 2016-04-25 16:27:49
+
+[zhangrz@vm-10-11-145-183 ~]$ ls
+bin  git  liguanghui  tar  test
+[zhangrz@vm-10-11-145-183 ~]$ cd liguanghui/
+[zhangrz@vm-10-11-145-183 liguanghui]$ ls
+search_and_rec
+[zhangrz@vm-10-11-145-183 liguanghui]$ cd search_and_rec/
+[zhangrz@vm-10-11-145-183 search_and_rec]$ ls
+base  BLADE_ROOT  data  infrastructure  ip_locater  nginx_server  opendata  README_zh.md  recommendation  search2  shared  third_party  tools  util
+[zhangrz@vm-10-11-145-183 search_and_rec]$ cd third_party/
+[zhangrz@vm-10-11-145-183 third_party]$ ls
+boost                   friso          gperftools-2.0  json-c-0.9              libsvm               openssl           redis-cplusplus-client
+boost_1_49_0            friso-1.5.0    gtest           jsoncpp                 libuv-1.8.0          openssl-1.0.1i    SimpleAmqpClient
+cassandra-driver-2.3.0  GeoIP-1.4.8    gtest-1.6.0     jsoncpp-0.5.0           libxml2-2.7.6        OWNERS            SimpleAmqpClient-2.4.0
+class_registry          gflags         gtest-1.7.0     jsoncpp-1.0.0           log4cplus-1.1.3-rc1  parse_master2     snappy
+cpp-btree               gflags-2.0     hadoop          libevent                mahout-0.11.0-src    perftools         soci
+cpp-btree-1.0.1         glog           hadoop-1.1.2    libevent-2.0.11-stable  minilzo              php_third_party   sparsehash
+cpp-hiredis-cluster     glog-0.3.2     hadoop-2.6.4    libevent-2.0.21         MNMLSTC              protobuf          sparsehash-2.0.2
+cppjieba-master-4.1.0   glog-0.3.4     hiredis         libevhtp-1.2.10         modp_b64             protobuf-2.4.1    sqlite-autoconf-3081101
+curl                    gmock          hiredis-0.10    libiconv-1.13.1         mongo-c-driver       python_lib        thrift
+curl-7.21.7             gmock-1.6.0    hiredis-0.13.3  libmemcached-0.25       mongo-cxx-driver     rabbitmq-c        zlib-1.2.8
+curl-7.34.0             gold_hash_map  i18n            libmemcached-1.0.18     mysql-5.5.24         rabbitmq-c-0.5.0  zookeeper
+flatbuffers             google         icu             libproc                 nginx-1.4.4          rapidjson-master
+flatbuffers-1.3.0       googleurl      json            libstemmer_c            nutcracker-0.2.4     redis-2.6.14
+[zhangrz@vm-10-11-145-183 third_party]$ cd mongo-cxx-driver/
+[zhangrz@vm-10-11-145-183 mongo-cxx-driver]$ ls
+appveyor.yml  build  cmake  CMakeLists.txt  CONTRIBUTING.md  CREDITS.json  Doxyfile  etc  examples  generated  LICENSE  README.md  src  TODO.md
+[zhangrz@vm-10-11-145-183 mongo-cxx-driver]$ cd examples/
+[zhangrz@vm-10-11-145-183 examples]$ ls
+bsoncxx  CMakeLists.txt  mongocxx  README.md
+[zhangrz@vm-10-11-145-183 examples]$ tree
+.
+©À©¤©¤ bsoncxx
+©¦?? ©À©¤©¤ builder_basic.cpp
+©¦?? ©À©¤©¤ builder_core.cpp
+©¦?? ©À©¤©¤ builder_stream.cpp
+©¦?? ©À©¤©¤ builder_stream_customization.cpp
+©¦?? ©À©¤©¤ CMakeLists.txt
+©¦?? ©À©¤©¤ getting_values.cpp
+©¦?? ©¸©¤©¤ view_and_value.cpp
+©À©¤©¤ CMakeLists.txt
+©À©¤©¤ mongocxx
+©¦?? ©À©¤©¤ aggregate.cpp
+©¦?? ©À©¤©¤ BUILD
+©¦?? ©À©¤©¤ bulk_write.cpp
+©¦?? ©À©¤©¤ CMakeLists.txt
+©¦?? ©À©¤©¤ create.cpp
+©¦?? ©À©¤©¤ document_validation.cpp
+©¦?? ©À©¤©¤ exception.cpp
+©¦?? ©À©¤©¤ index.cpp
+©¦?? ©À©¤©¤ query.cpp
+©¦?? ©À©¤©¤ remove.cpp
+©¦?? ©À©¤©¤ update.cpp
+©¦?? ©¸©¤©¤ view_or_value_variant.cpp
+©¸©¤©¤ README.md
+
+2 directories, 21 files
+[zhangrz@vm-10-11-145-183 examples]$ pwd
+/letv/zhangrz/liguanghui/search_and_rec/third_party/mongo-cxx-driver/examples
+[zhangrz@vm-10-11-145-183 examples]$ grep 'pool' * -R
+[zhangrz@vm-10-11-145-183 examples]$ ls
+bsoncxx  CMakeLists.txt  mongocxx  README.md
+[zhangrz@vm-10-11-145-183 examples]$ cd ..
+[zhangrz@vm-10-11-145-183 mongo-cxx-driver]$ ls
+appveyor.yml  build  cmake  CMakeLists.txt  CONTRIBUTING.md  CREDITS.json  Doxyfile  etc  examples  generated  LICENSE  README.md  src  TODO.md
+[zhangrz@vm-10-11-145-183 mongo-cxx-driver]$ cd src/
+[zhangrz@vm-10-11-145-183 src]$ ls
+bsoncxx  BUILD  CMakeLists.txt  mongocxx  third_party
+[zhangrz@vm-10-11-145-183 src]$ grep "pool" * -R
+mongocxx/BUILD:        'pool.cpp',
+mongocxx/CMakeLists.txt:    pool.cpp
+mongocxx/client.hpp:    friend class pool;
+mongocxx/pool.cpp:#include <mongocxx/pool.hpp>
+mongocxx/pool.cpp:#include <mongocxx/private/pool.hpp>
+mongocxx/pool.cpp:void pool::_release(client* client) {
+mongocxx/pool.cpp:    libmongoc::client_pool_push(_impl->client_pool_t, client->_get_impl().client_t);
+mongocxx/pool.cpp:pool::~pool() = default;
+mongocxx/pool.cpp:pool::pool(const uri& mongodb_uri, stdx::optional<options::ssl> ssl_options)
+mongocxx/pool.cpp:    : _impl{stdx::make_unique<impl>(libmongoc::client_pool_new(mongodb_uri._impl->uri_t),
+mongocxx/pool.cpp:        libmongoc::client_pool_set_ssl_opts(_impl->client_pool_t, &mongoc_opts);
+mongocxx/pool.cpp:pool::entry pool::acquire() {
+mongocxx/pool.cpp:    return entry(new client(libmongoc::client_pool_pop(_impl->client_pool_t)),
+mongocxx/pool.cpp:stdx::optional<pool::entry> pool::try_acquire() {
+mongocxx/pool.cpp:    auto cli = libmongoc::client_pool_try_pop(_impl->client_pool_t);
+mongocxx/pool.cpp:    return pool::entry{new client(cli), [this](client* client) { _release(client); }};
+mongocxx/pool.hpp:/// A pool of @c client objects associated with a MongoDB deployment.
+mongocxx/pool.hpp:/// in the pool is configured using the 'minPoolSize' and 'maxPoolSize' connection string options.
+mongocxx/pool.hpp:/// @remark When connecting to a replica set, it is @b much more efficient to use a pool as opposed
+mongocxx/pool.hpp:/// to manually constructing @c client objects. The pool will use a single background thread used
+mongocxx/pool.hpp:/// As a @c client is @b not thread safe, the @c pool should be preferred in multithreaded
+mongocxx/pool.hpp:class MONGOCXX_API pool {
+mongocxx/pool.hpp:    /// Creates a pool associated with a connection string.
+mongocxx/pool.hpp:    pool(const uri& mongodb_uri = mongocxx::uri(),
+mongocxx/pool.hpp:    /// Destroys a pool.
+mongocxx/pool.hpp:    ~pool();
+mongocxx/pool.hpp:    /// An entry is a handle on a @c client object acquired via the pool.
+mongocxx/pool.hpp:    /// @note The lifetime of any entry object must be a subset of the pool object
+mongocxx/pool.hpp:    /// Acquires a client from the pool. The calling thread will block until a connection is
+mongocxx/pool.hpp:    /// Acquires a client from the pool. This method will return immediately, but may return a
+mongocxx/private/libmongoc_symbols.hpp:MONGOCXX_LIBMONGOC_SYMBOL(client_pool_destroy)
+mongocxx/private/libmongoc_symbols.hpp:MONGOCXX_LIBMONGOC_SYMBOL(client_pool_new)
+mongocxx/private/libmongoc_symbols.hpp:MONGOCXX_LIBMONGOC_SYMBOL(client_pool_pop)
+mongocxx/private/libmongoc_symbols.hpp:MONGOCXX_LIBMONGOC_SYMBOL(client_pool_push)
+mongocxx/private/libmongoc_symbols.hpp:MONGOCXX_LIBMONGOC_SYMBOL(client_pool_try_pop)
+mongocxx/private/libmongoc_symbols.hpp:MONGOCXX_LIBMONGOC_SYMBOL(client_pool_set_ssl_opts)
+mongocxx/private/pool.hpp:#include <mongocxx/pool.hpp>
+mongocxx/private/pool.hpp:class pool::impl {
+mongocxx/private/pool.hpp:    impl(mongoc_client_pool_t* pool, stdx::optional<options::ssl> ssl_opts)
+mongocxx/private/pool.hpp:        : client_pool_t(pool), ssl_options(std::move(ssl_opts)) {
+mongocxx/private/pool.hpp:        libmongoc::client_pool_destroy(client_pool_t);
+mongocxx/private/pool.hpp:    mongoc_client_pool_t* client_pool_t;
+mongocxx/test/CMakeLists.txt:    pool.cpp
+mongocxx/test/pool.cpp:#include <mongocxx/pool.hpp>
+mongocxx/test/pool.cpp:TEST_CASE("a pool is created with the correct MongoDB URI", "[pool]") {
+mongocxx/test/pool.cpp:    client_pool_destroy->interpose([&](::mongoc_client_pool_t*) { destroy_called = true; });
+mongocxx/test/pool.cpp:    client_pool_new->interpose([&](const mongoc_uri_t* uri) {
+mongocxx/test/pool.cpp:        pool p{mongodb_uri};
+mongocxx/test/pool.cpp:    "If we pass an engaged SSL options struct to the pool class, we will use it to configure the "
+mongocxx/test/pool.cpp:    "underlying mongoc pool",
+mongocxx/test/pool.cpp:    "[pool]") {
+mongocxx/test/pool.cpp:    client_pool_set_ssl_opts->interpose(
+mongocxx/test/pool.cpp:        [&](::mongoc_client_pool_t*, const ::mongoc_ssl_opt_t* opts) {
+mongocxx/test/pool.cpp:    pool p{uri{"mongodb://mongodb.example.com:9999"}, std::move(ssl_opts)};
+mongocxx/test/pool.cpp:    "calling acquire on a pool returns a entry that is released when it goes out of "
+mongocxx/test/pool.cpp:    "[pool]") {
+mongocxx/test/pool.cpp:    client_pool_pop->interpose([&](::mongoc_client_pool_t*) {
+mongocxx/test/pool.cpp:    client_pool_push->interpose(
+mongocxx/test/pool.cpp:        [&](::mongoc_client_pool_t*, ::mongoc_client_t*) { push_called = true; });
+mongocxx/test/pool.cpp:        pool p{};
+mongocxx/test/pool.cpp:    "try_acquire returns an engaged stdx::optional<entry> if mongoc_client_pool_try_pop "
+mongocxx/test/pool.cpp:    "[pool]") {
+mongocxx/test/pool.cpp:    client_pool_try_pop->interpose([&](::mongoc_client_pool_t*) {
+mongocxx/test/pool.cpp:        pool p{};
+mongocxx/test/pool.cpp:    "try_acquire returns a disengaged stdx::optional<entry> if mongoc_client_pool_try_pop "
+mongocxx/test/pool.cpp:    "[pool]") {
+mongocxx/test/pool.cpp:    client_pool_try_pop->interpose([](::mongoc_client_pool_t*) { return nullptr; });
+mongocxx/test/pool.cpp:        pool p{};
+mongocxx/uri.hpp:    friend class pool;
+third_party/catch/include/catch.hpp:    NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
+third_party/catch/include/catch.hpp:    [pool drain];
+third_party/catch/include/helpers.hpp:    auto client_pool_new = libmongoc::client_pool_new.create_instance();                       \
+third_party/catch/include/helpers.hpp:    client_pool_new->interpose([](const mongoc_uri_t*) { return nullptr; }).forever();         \
+third_party/catch/include/helpers.hpp:    auto client_pool_destroy = libmongoc::client_pool_destroy.create_instance();               \
+third_party/catch/include/helpers.hpp:    client_pool_destroy->interpose([&](::mongoc_client_pool_t*) {}).forever();                 \
+third_party/catch/include/helpers.hpp:    auto client_pool_pop = libmongoc::client_pool_pop.create_instance();                       \
+third_party/catch/include/helpers.hpp:    client_pool_pop->interpose([](::mongoc_client_pool_t*) { return nullptr; }).forever();     \
+third_party/catch/include/helpers.hpp:    auto client_pool_push = libmongoc::client_pool_push.create_instance();                     \
+third_party/catch/include/helpers.hpp:    client_pool_push->interpose([](::mongoc_client_pool_t*, ::mongoc_client_t*) {}).forever(); \
+third_party/catch/include/helpers.hpp:    auto client_pool_try_pop = libmongoc::client_pool_try_pop.create_instance();               \
+third_party/catch/include/helpers.hpp:    client_pool_try_pop->interpose([](::mongoc_client_pool_t*) { return nullptr; }).forever(); \
+third_party/catch/include/helpers.hpp:    auto client_pool_set_ssl_opts = libmongoc::client_pool_set_ssl_opts.create_instance(); \
+third_party/catch/include/helpers.hpp:    client_pool_set_ssl_opts->interpose([](::mongoc_client_pool_t*, const ::mongoc_ssl_opt_t*) {});
+[zhangrz@vm-10-11-145-183 src]$ cd mongocxx/test/pool.cpp 
+-bash: cd: mongocxx/test/pool.cpp: Not a directory
+[zhangrz@vm-10-11-145-183 src]$ cd mongocxx/test/
+[zhangrz@vm-10-11-145-183 test]$ vim pool.cpp 
+[zhangrz@vm-10-11-145-183 test]$ cd ..
+[zhangrz@vm-10-11-145-183 mongocxx]$ ls
+BUILD           cmake           cursor.cpp    hint.cpp                 instance.hpp  options       private              result    validation_criteria.cpp
+bulk_write.cpp  CMakeLists.txt  cursor.hpp    hint.hpp                 logger.cpp    pipeline.cpp  read_concern.cpp     stdx.hpp  validation_criteria.hpp
+bulk_write.hpp  collection.cpp  database.cpp  insert_many_builder.cpp  logger.hpp    pipeline.hpp  read_concern.hpp     test      write_concern.cpp
+client.cpp      collection.hpp  database.hpp  insert_many_builder.hpp  mock          pool.cpp      read_preference.cpp  uri.cpp   write_concern.hpp
+client.hpp      config          exception     instance.cpp             model         pool.hpp      read_preference.hpp  uri.hpp   write_type.hpp
+[zhangrz@vm-10-11-145-183 mongocxx]$ vim pool.hpp 
+
+/letv/zhangrz/liguanghui/search_and_rec/third_party/mongo-cxx-driver/src/mongocxx
+
